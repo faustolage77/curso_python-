@@ -57,10 +57,32 @@
 # algoritmo para descobrir quantas notas de 1, 10 e 50 preciso para pagar uma conta
 
 
+notas = [1, 10, 50]
+
+for valor in notas:
+
+    conta = input("diga o valor da conta: ")
+    conta = float(conta)
+
+    while conta < 0:
+        conta = input("Sua conta deve ser maior que 0!: ")
+
+        conta = float(conta)
+
+    quantidade1 = conta / 1
+    quantidade10 = conta / 10
+    quantidade50 = conta/50
+
+    print(quantidade1, quantidade10, quantidade50)
+
+    break
 
 
 
 
+
+
+""" 
 nota1 = 1
 nota10 = 10
 nota50 = 50
@@ -115,7 +137,7 @@ elif valorConta == 50:
 
 #  conferir resto de divisao e arredondamento p cima
 
-
+"""
 
 
 
